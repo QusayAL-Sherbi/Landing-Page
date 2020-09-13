@@ -6,16 +6,13 @@ header {
   position: relative;
 }
 
-header .row .col:first-child {
-  background-color: #F00;
-}
-
-header .row .col:last-child {
-  background-color: #00F;
-}
-
 header .navbar-nav .nav-item .nav-link {
   padding: 8px 16px;
+}
+
+header .navbar-nav .nav-item.active .nav-link {
+  color: #FFF;
+  opacity: 1;
 }
 
 header .navbar-nav .nav-item .nav-link, header .navbar-nav .nav-item button {

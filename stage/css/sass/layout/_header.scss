@@ -1,20 +1,16 @@
 header {
-  background:linear-gradient(360deg, #eb6c70 0%,#2f71c9 100% );
+  background: linear-gradient(360deg, #eb6c70 0%,#2f71c9 100% );
   min-height: 100vh;
   overflow: hidden;
   position: relative;
-  .row {
-    .col:first-child {
-      background-color: #F00;
-    }
-    .col:last-child {
-      background-color: #00F;
-    }
-  }
   .navbar-nav {
     .nav-item {
       .nav-link {
         padding: 8px 16px;
+      }
+      &.active .nav-link {
+        color: #FFF;
+        opacity: 1;
       }
       .nav-link, button {
         color: #FFF;
