@@ -1,0 +1,46 @@
+header {
+  background: -webkit-gradient(linear, left bottom, left top, from(#eb6c70), to(#2f71c9));
+  background: linear-gradient(360deg, #eb6c70 0%, #2f71c9 100%);
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+header .row .col:first-child {
+  background-color: #F00;
+}
+
+header .row .col:last-child {
+  background-color: #00F;
+}
+
+header .navbar-nav .nav-item .nav-link {
+  padding: 8px 16px;
+}
+
+header .navbar-nav .nav-item .nav-link, header .navbar-nav .nav-item button {
+  color: #FFF;
+  font-weight: bold;
+  opacity: .7;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header .navbar-nav .nav-item .nav-link:hover, header .navbar-nav .nav-item button:hover {
+  opacity: 1;
+}
+
+header .navbar-nav .nav-item button {
+  border: 1px solid #FFF;
+}
+
+header .intro-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/*# sourceMappingURL=main.css.map */

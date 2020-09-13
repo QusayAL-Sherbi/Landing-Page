@@ -1,0 +1,40 @@
+header {
+  background:linear-gradient(360deg, #eb6c70 0%,#2f71c9 100% );
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  .row {
+    .col:first-child {
+      background-color: #F00;
+    }
+    .col:last-child {
+      background-color: #00F;
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        padding: 8px 16px;
+      }
+      .nav-link, button {
+        color: #FFF;
+        font-weight: bold;
+        opacity: .7;
+        transition: .5s;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      button {
+        border: 1px solid #FFF;
+      }
+    }
+  }
+  .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
