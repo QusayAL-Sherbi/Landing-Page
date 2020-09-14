@@ -1,5 +1,6 @@
 header {
-  background: linear-gradient(360deg, #eb6c70 0%,#2f71c9 100% );
+  background-color: #232323;
+  // background: linear-gradient(360deg, #eb6c70 0%,#2f71c9 100% );
   min-height: 100vh;
   overflow: hidden;
   position: relative;
@@ -33,8 +34,8 @@ header {
     color: #FFF;
     .info {
       position: relative;
-      top: 100%;
-      transform: translateY(-100%);
+      top: 50%;
+      transform: translateY(-50%);
       padding: 15px;
       h1 {
         font-weight: bold;
@@ -45,9 +46,11 @@ header {
       }
     }
     .image {
+      // background-color: rgba(#080, .5);
       img {
-        width: 100%;
-        height: 100%;
+        width: 85%;
+        height: 85%;
+        transform: rotateZ(-20deg);
       }
     }
   }
