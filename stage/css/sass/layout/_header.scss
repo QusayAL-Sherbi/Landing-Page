@@ -1,6 +1,5 @@
 header {
   background-color: #232323;
-  // background: linear-gradient(360deg, #eb6c70 0%,#2f71c9 100% );
   min-height: 100vh;
   overflow: hidden;
   position: relative;
@@ -10,11 +9,11 @@ header {
         padding: 8px 16px;
       }
       &.active .nav-link {
-        color: #FFF;
+        color: $whiteColor;
         opacity: 1;
       }
       .nav-link, button {
-        color: #FFF;
+        color: $whiteColor;
         font-weight: bold;
         opacity: .7;
         transition: .5s;
@@ -23,34 +22,72 @@ header {
         }
       }
       button {
-        border: 1px solid #FFF;
+        border: 1px solid $whiteColor;
       }
     }
   }
   .intro {
+    color: $whiteColor;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #FFF;
+    top: 60%;
+    transform: translateY(-60%);
     .info {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      padding: 15px;
       h1 {
+        color: $blueColor;
         font-weight: bold;
         font-size: 3rem;
+      }
+      padding: 20px;
+      button {
+        background-color: $blueColor;
+        color: $whiteColor;
       }
       p {
         font-size: 1.3em;
       }
     }
     .image {
-      // background-color: rgba(#080, .5);
       img {
         width: 85%;
         height: 85%;
         transform: rotateZ(-20deg);
+      }
+    }
+    .colors-option {
+      ul {
+        display: flex;
+        justify-content: center;
+        li {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          margin: 5px 15px;
+          opacity: .2;
+          transition: opacity .7s;
+          cursor: pointer;
+          &:nth-of-type(1) {
+            background-color: $blackColor;
+          }
+          &:nth-of-type(2) {
+            background-color: $blueColor;
+          }
+          &:nth-of-type(3) {
+            background-color: $greenColor;
+          }
+          &:nth-of-type(4) {
+            background-color: $orangeColor;
+          }
+          &:nth-of-type(5) {
+            background-color: $redColor;
+          }
+          &.active {
+            opacity: 1;
+            border: 2px solid $whiteColor;
+          }
+          &:hover {
+            opacity: 1;
+          }
+        }
       }
     }
   }
